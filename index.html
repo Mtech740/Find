@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fraud Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Fraud Tracker</h1>
+    <form id="logForm">
+      <input type="text" id="phone" placeholder="Phone Number" required />
+      <input type="number" id="amount" placeholder="Amount Stolen" required />
+      <input type="date" id="date" required />
+      <textarea id="note" placeholder="Additional Notes"></textarea>
+      <button type="submit">Add Entry</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Search phone or notes..." />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Phone</th>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody id="logTable"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+    </html>
